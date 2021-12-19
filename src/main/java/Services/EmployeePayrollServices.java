@@ -1,16 +1,13 @@
-
-
-
 package com.bridgelabz.employeepayrollapp.services;
 
-        import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
-        import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
-        import com.bridgelabz.employeepayrollapp.repository.EmployeeRepository;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.stereotype.Service;
+import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
+import com.bridgelabz.employeepayrollapp.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-        import java.util.ArrayList;
-        import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class EmployeePayrollServices implements IEmployeePayrollService{

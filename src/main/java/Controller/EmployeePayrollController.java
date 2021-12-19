@@ -1,18 +1,18 @@
 package com.bridgelabz.employeepayrollapp.controller;
 
 
-        import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
-        import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
-        import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
-        import com.bridgelabz.employeepayrollapp.services.IEmployeePayrollService;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.http.HttpStatus;
-        import org.springframework.http.ResponseEntity;
-        import org.springframework.web.bind.annotation.*;
+import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
+import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
+import com.bridgelabz.employeepayrollapp.services.IEmployeePayrollService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 
 
-        import java.util.List;
+import java.util.List;
 
 
 @RestController
