@@ -1,7 +1,5 @@
 package com.bridgelabz.employeepayrollapp.dto;
-
 import lombok.Data;
-
 @Data
 public class EmployeePayrollDTO {
 
@@ -33,5 +31,4 @@ public class EmployeePayrollDTO {
 //    public void setSalary(long salary) {
 //        this.salary = salary;
 //    }
-
 }

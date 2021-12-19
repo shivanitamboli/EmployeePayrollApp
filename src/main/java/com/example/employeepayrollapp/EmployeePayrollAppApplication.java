@@ -1,13 +1,21 @@
-package com.example.employeepayrollapp;
+package com.bridgelabz.employeepayrollapp;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class EmployeePayrollAppApplication {
+@Slf4j
+public class EmployeePayRollAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmployeePayrollAppApplication.class, args);
+        ApplicationContext context =SpringApplication.run(EmployeePayRollAppApplication.class, args);
+        log.info("Employee Payroll App Started in {} Environment",
+                context.getEnvironment().getProperty("environment"));
+        log.info("Employee Payroll DB User is {}",
+                context.getEnvironment().getProperty("spring.datasource.username"));
+        log.info("Test message of Slf4j");
     }
 
 }
