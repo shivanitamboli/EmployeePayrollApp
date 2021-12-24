@@ -1,14 +1,15 @@
-package com.bridgelabz.employeepayrollapp.controller;
-import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
-import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
-import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
-import com.bridgelabz.employeepayrollapp.services.IEmployeePayrollService;
+package com.example.springemployeepayrollapp.controller;
+
+import com.example.springemployeepayrollapp.dto.EmployeePayrollDTO;
+import com.example.springemployeepayrollapp.dto.ResponseDTO;
+import com.example.springemployeepayrollapp.model.EmployeePayrollData;
+import com.example.springemployeepayrollapp.services.IEmployeePayrollService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
+import java.util.List;
 
 @RestController
 @RequestMapping("/employeePayrollservice")
@@ -22,7 +23,7 @@ public class EmployeePayrollController {
         List<EmployeePayrollData> empDataList = null;
         empDataList = employeePayrollService.getEmployeePayrollData();
         ResponseDTO respDTO = new ResponseDTO("Get Call Success",empDataList);
-        return new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
+        return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
     /**
